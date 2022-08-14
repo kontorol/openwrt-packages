@@ -5,12 +5,12 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=gost
-PKG_VERSION:=2.11.2
+PKG_VERSION:=3.0.0-beta.2
 PKG_RELEASE:=$(AUTORELEASE)
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
-PKG_SOURCE_URL:=https://codeload.github.com/ginuerzh/gost/tar.gz/v$(PKG_VERSION)?
-PKG_HASH:=143174a9ba5b0b6251d1d9a52267220f97bec1319676618746c1a5d7a7a86d96
+PKG_SOURCE_URL:=https://codeload.github.com/go-gost/gost/tar.gz/v$(PKG_VERSION)?
+PKG_HASH:=e404ec04c2e04ca05cb9fd5d83412e304cfb4976ff2389c786bcfe9468e2958d
 
 PKG_LICENSE:=MIT
 PKG_LICENSE_FILE:=LICENSE
