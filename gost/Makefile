@@ -20,8 +20,8 @@ PKG_BUILD_DEPENDS:=golang/host
 PKG_BUILD_PARALLEL:=1
 PKG_USE_MIPS16:=0
 
-GO_PKG:=github.com/ginuerzh/gost
-GO_PKG_BUILD_PKG:=github.com/ginuerzh/gost/cmd/gost
+GO_PKG:=github.com/kontorol/gost
+GO_PKG_BUILD_PKG:=github.com/kontorol/gost/cmd/gost
 
 include $(INCLUDE_DIR)/package.mk
 include $(TOPDIR)/feeds/packages/lang/golang/golang-package.mk
@@ -30,7 +30,7 @@ define Package/gost
   SECTION:=net
   CATEGORY:=Network
   TITLE:=GO Simple Tunnel
-  URL:=https://github.com/ginuerzh/gost
+  URL:=https://github.com/kontorol/gost
   DEPENDS:=$(GO_ARCH_DEPENDS) +ca-bundle
 endef
 
