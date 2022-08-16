@@ -5,12 +5,12 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=gost
-PKG_VERSION:=3.0.0-beta.2-dark
+PKG_VERSION:=3.0.0-beta.2
 PKG_RELEASE:=$(AUTORELEASE)
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
-PKG_SOURCE_URL:=https://codeload.github.com/kontorol/gost/tar.gz/v$(PKG_VERSION)?
-PKG_HASH:=b0e4754287e497f9aca08229f260aa3e7e8d7ac273970fbab5d7c7707f609ac2
+PKG_SOURCE_URL:=https://codeload.github.com/go-gost/gost/tar.gz/v$(PKG_VERSION)?
+PKG_HASH:=e404ec04c2e04ca05cb9fd5d83412e304cfb4976ff2389c786bcfe9468e2958d
 
 PKG_LICENSE:=MIT
 PKG_LICENSE_FILE:=LICENSE
@@ -21,7 +21,7 @@ PKG_BUILD_PARALLEL:=1
 PKG_USE_MIPS16:=0
 
 GO_PKG:=github.com/kontorol/gost
-GO_PKG_BUILD_PKG:=github.com/kontorol/gost/cmd/gost
+GO_PKG_BUILD_PKG:=github.com/go-gost/gost/cmd/gost
 
 include $(INCLUDE_DIR)/package.mk
 include $(TOPDIR)/feeds/packages/lang/golang/golang-package.mk
@@ -30,7 +30,7 @@ define Package/gost
   SECTION:=net
   CATEGORY:=Network
   TITLE:=GO Simple Tunnel
-  URL:=https://github.com/kontorol/gost
+  URL:=https://github.com/go-gost/gost
   DEPENDS:=$(GO_ARCH_DEPENDS) +ca-bundle
 endef
 
