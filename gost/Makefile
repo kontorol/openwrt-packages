@@ -5,12 +5,12 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=gost
-PKG_VERSION:=3.0.0-beta.2
+PKG_VERSION:=3.0.0-beta.4-dark
 PKG_RELEASE:=$(AUTORELEASE)
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
-PKG_SOURCE_URL:=https://codeload.github.com/go-gost/gost/tar.gz/v$(PKG_VERSION)?
-PKG_HASH:=e404ec04c2e04ca05cb9fd5d83412e304cfb4976ff2389c786bcfe9468e2958d
+PKG_SOURCE_URL:=https://codeload.github.com/kontorol/gost/tar.gz/v$(PKG_VERSION)?
+PKG_HASH:=e34bc3a95f9a9de94ee5c4581fe47b5b7a48c71503e3c147d696248ae3f96ba4
 
 PKG_LICENSE:=MIT
 PKG_LICENSE_FILE:=LICENSE
@@ -30,7 +30,7 @@ define Package/gost
   SECTION:=net
   CATEGORY:=Network
   TITLE:=GO Simple Tunnel
-  URL:=https://github.com/go-gost/gost
+  URL:=https://github.com/kontorol/gost
   DEPENDS:=$(GO_ARCH_DEPENDS) +ca-bundle
 endef
 
